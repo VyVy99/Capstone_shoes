@@ -1,3 +1,26 @@
 body, html {
   font-family: "Roboto", sans-serif;
 }
+
+.container {
+  max-width: 1320px;
+}
+
+.nav-right {
+  color: #F6F6F6;
+  font-size: 16px;
+}
+
+img {
+  width: 116px;
+  height: 32px;
+}
+
+.navbar-expand-lg {
+  background-color: white !important;
+  color: #000000;
+}
+
+.carousel .carousel-item img {
+  height: 700px;
+}

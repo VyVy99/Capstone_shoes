@@ -1,3 +1,32 @@
 body, html{
 font-family: 'Roboto', sans-serif;
 }
+
+$color-white-F6: #F6F6F6;
+$color-black-F0: #000000;
+.container{
+    max-width: 1320px;
+}
+//font chu:
+$fs-nav-bright: 16px;
+.nav-right{
+   color: $color-white-F6;
+   font-size: $fs-nav-bright;
+//    justify-content: center;
+//    align-items: center;
+}
+img{
+    width: 116px;
+    height: 32px;
+}
+.navbar-expand-lg{
+    background-color: white !important;
+    color: $color-black-F0;
+
+
+}
+
+.carousel  .carousel-item img{
+   
+    height: 700px;
+}
