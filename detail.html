@@ -29,162 +29,71 @@
   <header>
     <!-- top -->
     <nav class="navbar navbar-dark bg-dark ">
-      <span>
-        <img
-          src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4"
-          alt="">
-        <p>Cybersoft</p>
-      </span>
-      <div class=" d-flex nav-right p-2">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <p>Login</p>
-        <p>Register</p>
-      </div>
-    </nav>
-    <!-- bottom -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            <a class="nav-link" href="#">Men</a>
-            <a class="nav-link" href="#">Women </a>
-            <a class="nav-link" href="#">Kids </a>
-            <a class="nav-link" href="#">Sports </a>
-
-          </div>
+      <div class=" container">
+        <h2 class="text-warning">Cybersoft</h2>
+        <div class=" d-flex nav-right p-2">
+          <button class="btn btn-warning">
+  
+            <i class="fa-solid fa-cart-shopping fs-4"></i>
+            (<span id="cart_quality">1</span>)
+          </button>
+          <a href="./register.html" class="btn btn-dark mx-2">Login</a>
+          <a href="./register.html" class="btn btn-dark mx-2">Register</a>
         </div>
       </div>
+  
     </nav>
+
   </header>
 
-  <!-- banner -->
-  <div class="row">
-    <div class="col-5">
+  <!-- detail product -->
+  <div class="container-fluid">
+  <div class="row p-5">
+    <div class="col-3">
       <img
-        src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4"
-        class="w-100 h-100 " alt="">
+      width="400px"
+      height="400px"
+        src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4" alt="">
     </div>
-    <div class="col-7">
+    <div class="col-9">
       <h2>Product name</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quod assumenda. Eos corporis esse voluptatum
         sit, amet quod? Tenetur quod, accusamus nulla temporibus dignissimos minus iste dolor itaque nostrum a quos?
         Exercitationem deleniti optio expedita velit, distinctio nostrum officia ad excepturi obcaecati rerum architecto
         ipsum quasi maiores nobis voluptas similique.</p>
       <h4>Available product</h4>
-      <button type="button" class="btn btn-info">38</button>
-      <button type="button" class="btn btn-info">39</button>
-      <button type="button" class="btn btn-info">40</button>
-      <button type="button" class="btn btn-info">41</button>
-      <button type="button" class="btn btn-info">42</button>
-      <div class="m-3">
+      <div class="d-flex">
+        <button type="button" class="mx-1 btn btn-info">38</button>
+        <button type="button" class="mx-1 btn btn-info">39</button>
+        <button type="button" class="mx-1 btn btn-info">40</button>
+        <button type="button" class="mx-1 btn btn-info">41</button>
+        <button type="button" class="mx-1 btn btn-info">42</button>
+      </div>
+      <div class="price text-danger fw-bold h3 mt-3">
+        85$
+      </div>
+      <div class="m-3 d-flex">
         <button type="button" class="btn btn-warning">+</button>
+        <input style="width:50px " class="input-group-text mx-1" value="2"/>
         <button type="button" class="btn btn-warning">-</button>
       </div>
       <button type="button" class="btn btn-success p-3">Success</button>
     </div>
   </div>
+  </div>
+  
 
 
   <!-- card -->
   <div class="container">
-    <h2>Shoes Feature</h2>
-    <div class="row">
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img
-            src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img
-            src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img
-            src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img
-            src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img
-            src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img
-            src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60&fbclid=IwAR1sJXqlQ-l6JyUxljbzMmJyewPiQFrsEYGLD1AofeRtr3JfCYAwhLjVxp4"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
+    <h2 class="text-center">Shoes Feature</h2>
+    <div class="row"  id="showProduct">
+
     </div>
 
 
   </div>
   <!-- footer -->
-  <!-- Remove the container if you want to extend the Footer to full width. -->
 
 
 <footer class=" mt-5" style="background-color: #ffede7;">
@@ -283,6 +192,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+    <script src="./model/product.js"></script>
+    <script src="./js/detail.js"></script>
 </body>
 
 </html>
