@@ -23,3 +23,8 @@ a {
 .carousel .carousel-item img {
   height: 700px;
 }
+
+.product_detail_image {
+  width: 334px;
+  height: 355px;
+}
