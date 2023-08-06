@@ -28,9 +28,9 @@ function renderProducts(data) {
         const product = new Product(data[i])
         content += `
         <div class="col-4 mt-5">
-            <div class="card " style="width: 18rem;">
-             <a class="text-dark " href="./detail.html">
-                <img src=${product.image} height="250px" alt="...">
+            <div  class="card " style="width: 18rem;">
+             <a class="text-dark " href="./detail.html?productid=${product.id}">
+                <img class="img-fluid" src=${product.image}  alt=${product.name}>
                 <div class="card-body">
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.shortDescription}
