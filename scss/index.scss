@@ -27,3 +27,9 @@ $fs-nav-bright: 16px;
 .carousel  .carousel-item img{
     height: 700px;
 }
+.product_detail{
+    &_image{
+        width: 334px;
+        height: 355px;
+    }
+}
