@@ -1,0 +1,136 @@
+body, html {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background: #fff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-right {
+  color: #F6F6F6;
+  font-size: 16px;
+}
+
+.navbar-expand-lg {
+  background-color: white !important;
+  color: #000000;
+}
+
+.carousel .carousel-item img {
+  height: 700px;
+}
+
+.product_detail_image {
+  width: 334px;
+  height: 355px;
+}
+
+.register {
+  padding: 50px 0;
+  background: #fff;
+}
+.register .register_border_radius {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+.register .register_content {
+  padding: 75px 0;
+}
+.register .register_content .row {
+  align-items: center;
+}
+.register .register_content .register_form {
+  padding: 0 55px 0 75px;
+  width: 100%;
+  overflow: hidden;
+}
+.register .register_content .register_form .form_title {
+  margin-bottom: 33px;
+}
+.register .register_content .register_form h2 {
+  line-height: 1.66;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  color: #222;
+  font-size: 36px;
+}
+.register .sign_up_form {
+  width: 100%;
+}
+.register .sign_up_form .form_item {
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.register .sign_up_form .form_item label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #222;
+  cursor: pointer;
+}
+.register .sign_up_form .form_item label i {
+  font-size: 18px;
+}
+.register .sign_up_form .form_item input {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  box-sizing: border-box;
+  outline: none;
+}
+.register .sign_up_form .form_item select {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  box-sizing: border-box;
+  outline: none;
+}
+.register .register_button {
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+.register .register_button .btn_sign_up {
+  display: inline-block;
+  background: #6C63FF;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.register .register_img {
+  padding: 0 35px;
+  width: 100%;
+  overflow: hidden;
+}
+.register .register_img figure {
+  margin: 0;
+}
+.register .register_img figure img {
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=register.css.map */
