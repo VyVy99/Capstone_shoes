@@ -85,7 +85,7 @@ $fs-nav-bright: 16px;
         width: 100%;
         .form_item {
             position: relative;
-            margin-bottom: 25px;
+            margin-bottom: 5px;
             overflow: hidden;
             label {
                 position: absolute;
@@ -116,6 +116,13 @@ $fs-nav-bright: 16px;
                 box-sizing: border-box;
                 outline: none;
             }
+        }
+        .spThongBao {
+            color: red;
+            opacity: 0.75;
+            width: 100%;
+            display: inline-block;
+            text-align: right;
         }
     }
     .register_button {

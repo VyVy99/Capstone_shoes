@@ -72,7 +72,7 @@ a {
 }
 .register .sign_up_form .form_item {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   overflow: hidden;
 }
 .register .sign_up_form .form_item label {
@@ -103,6 +103,13 @@ a {
   padding: 6px 30px;
   box-sizing: border-box;
   outline: none;
+}
+.register .sign_up_form .spThongBao {
+  color: red;
+  opacity: 0.75;
+  width: 100%;
+  display: inline-block;
+  text-align: right;
 }
 .register .register_button {
   margin-bottom: 0;

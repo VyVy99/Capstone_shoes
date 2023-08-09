@@ -73,37 +73,41 @@
               <div class="register_form">
                 <h2 class="form_title">Sign up</h2>
     
-                <form class="sign_up_form">
+                <form class="sign_up_form" id="signUpForm" onsubmit="dangKy()">
                   <div class="form_item">
-                    <label for="name">
+                    <label for="name" id="lbName">
                       <i class="fa-solid fa-user"></i>
                     </label>
                     <input type="text" name="name" id="name" placeholder="Your Name">
                   </div>
-      
+                  <span id="tbName" class="spThongBao"></span>
+
                   <div class="form_item">
-                    <label for="email">
+                    <label for="email" id="lbEmail">
                       <i class="fa-solid fa-envelope"></i>
                     </label>
                     <input type="email" name="email" id="email" placeholder="Your Email">
                   </div>
+                  <span id="tbEmail" class="spThongBao"></span>
       
                   <div class="form_item">
-                    <label for="password">
+                    <label for="password" id="lbPassword">
                       <i class="fa-solid fa-lock"></i>
                     </label>
                     <input type="password" name="password" id="password" placeholder="Password">
                   </div>
+                  <span id="tbPassword" class="spThongBao"></span>
       
                   <div class="form_item">
-                    <label for="re_password">
+                    <label for="re_password" id="lbRePassword">
                       <i class="fa-solid fa-lock"></i>
                     </label>
                     <input type="password" name="re_password" id="re_password" placeholder="Repeat Your Password">
                   </div>
+                  <span id="tbRePassword" class="spThongBao"></span>
       
                   <div class="form_item">
-                    <label for="gender">
+                    <label for="gender" id="lbGender">
                       <i class="fa-solid fa-venus-mars"></i>
                     </label>
                     <select id="gender" name="gender">
@@ -112,18 +116,20 @@
                       <option value="female">Female</option>
                     </select>
                   </div>
+                  <span id="tbGender" class="spThongBao"></span>
       
                   <div class="form_item">
-                    <label for="phone">
+                    <label for="phone" id="lbPhone">
                       <i class="fa-solid fa-phone"></i>
                     </label>
                     <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
                   </div>
+                  <span id="tbPhone" class="spThongBao"></span>
+
+                  <div class="register_button">
+                    <button type="submit" class="btn_sign_up btn btn-primary" id="btnSignUp">Register</button>
+                  </div>
                 </form>
-      
-                <div class="register_button">
-                  <div class="btn_sign_up btn btn-primary" id="btnSignUp">Register</div>
-                </div>
               </div>
             </div>
 
@@ -233,6 +239,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
+
+    <script src="./model/account.js"></script>
+    <script src="./validation/validation.js"></script>
+    <script src="./js/register.js"></script>
 
 </body>
 
