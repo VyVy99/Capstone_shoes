@@ -6,10 +6,6 @@ a {
   text-decoration: none;
 }
 
-#header nav {
-  background-color: #212529 !important;
-}
-
 .nav-right {
   color: #F6F6F6;
   font-size: 16px;
@@ -20,6 +16,9 @@ a {
   color: #000000;
 }
 
+.carousel {
+  margin-top: 90px;
+}
 .carousel .carousel-item img {
   max-height: 700px;
 }
@@ -27,4 +26,284 @@ a {
 .product_detail_image {
   width: 334px;
   height: 355px;
+}
+
+#showProduct .btn_buynow {
+  background-color: #6C63FF;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 10px 0 0 10px !important;
+  transition: all 0.5s;
+}
+#showProduct .btn_buynow:hover {
+  color: #6C63FF;
+  background-color: white;
+  border: 2px solid #6C63FF;
+}
+#showProduct .btn_price {
+  border: 2px solid transparent;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+}
+#showProduct .product_item {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+#showProduct .product_item:hover {
+  transform: translateY(-20px);
+}
+#showProduct .card-footer {
+  padding: 15px;
+}
+
+header {
+  background-color: white;
+  padding: 0px;
+  height: 90px;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+header .navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #6C63FF;
+  letter-spacing: -1px;
+}
+header .navbar .navbar-brand:hover {
+  color: #6C63FF;
+}
+header .navbar .navbar-toggler {
+  background-color: #6C63FF;
+}
+header .navbar-nav .nav-link.active {
+  color: #6C63FF;
+}
+header .navbar-nav .nav-item {
+  padding: 0 15px;
+  transition: all 0.5s;
+  position: relative;
+}
+header .navbar-nav .nav-item .dropdown-menu {
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_men::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 0px;
+  height: 2px;
+  bottom: 110px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_men:hover::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 20px;
+  height: 2px;
+  bottom: 110px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_men:hover {
+  color: #6C63FF;
+  background-color: white;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_women::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 0px;
+  height: 2px;
+  bottom: 76px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_women:hover::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 20px;
+  height: 2px;
+  bottom: 76px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_women:hover {
+  color: #6C63FF;
+  background-color: white;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_kids::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 0px;
+  height: 2px;
+  bottom: 44px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_kids:hover::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 20px;
+  height: 2px;
+  bottom: 44px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_kids:hover {
+  color: #6C63FF;
+  background-color: white;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_sports::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 0px;
+  height: 2px;
+  bottom: 13px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_sports:hover::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 20px;
+  height: 2px;
+  bottom: 13px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item .dropdown-menu .item_sports:hover {
+  color: #6C63FF;
+  background-color: white;
+}
+header .navbar-nav .nav-link {
+  color: #212121;
+}
+header .navbar-nav .nav-link:hover {
+  color: #6C63FF;
+}
+header .navbar-nav .nav-link::before {
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  width: 0px;
+  height: 2px;
+  bottom: 8px;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-link:hover::before {
+  width: 20px;
+  position: absolute;
+  content: "";
+  background: #6C63FF;
+  height: 2px;
+  bottom: 8px;
+  transition: all 0.5s;
+}
+header .header_button a {
+  display: inline-block;
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 30px;
+  text-transform: uppercase;
+  color: #6C63FF;
+  border: 1px solid #6C63FF;
+  transition: all 0.5s;
+}
+header .header_button a:hover {
+  background-color: #6C63FF !important;
+  border: 1px solid #6C63FF !important;
+}
+header .bag_button i {
+  height: 20px;
+  width: 20px;
+  font-size: 1.5rem;
+  color: #6C63FF;
+  cursor: pointer;
+}
+
+footer .footer_item {
+  text-transform: capitalize;
+  transition: all 0.5s !important;
+  font-size: 15px;
+}
+footer .footer_item:hover {
+  color: #6C63FF !important;
+}
+footer .footer_bottom {
+  border-top: 1px solid #E2E6EA;
+}
+footer .footer_bottom .footer_info p {
+  font-size: 15px;
+  line-height: 22px;
+}
+footer .footer_bottom .footer_info span a {
+  text-decoration: none;
+  color: #212121;
+}
+footer .footer_bottom .footer_info span a:hover {
+  color: #6C63FF;
+}
+footer .footer_bottom .footer_social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer .footer_bottom .footer_social ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+footer .footer_bottom .footer_social ul li a {
+  color: #212121;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  display: inline-block;
+}
+footer .footer_bottom .footer_social ul li a i {
+  font-size: 15px;
+  line-height: 36px;
+}
+footer .footer_bottom .footer_social ul li a:hover {
+  color: #6C63FF;
+}
+
+/* back to top  */
+.back_to_top {
+  width: 50px;
+  height: 50px;
+  background: #6C63FF;
+  border-radius: 3px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  color: white;
+  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.back_to_top:hover {
+  color: #6C63FF;
+  background: white;
+  border: 1px solid #6C63FF;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */
