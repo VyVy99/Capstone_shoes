@@ -28,7 +28,7 @@ function renderProducts(data) {
         const product = new Product(data[i])
         content += `
         <div class="col-lg-4  col-sm-12  mt-5">
-            <div  class="card w-sm-auto">
+            <div  class="card product_item w-sm-auto">
              <a class="text-dark " href="./detail.html?productid=${product.id}">
                 <img class="img-fluid" src=${product.image}  alt=${product.name}>
                 <div class="card-body">
@@ -39,8 +39,8 @@ function renderProducts(data) {
                             </a>
                 <div class="card-footer">
                 <div class="d-flex">
-                    <button class="btn btn-warning w-75 rounded-0">Buy now</button>
-                    <div class=" p-2 bg-secondary text-white w-25 h-100 fw-bold">${product.price}$</div>
+                    <button class="btn btn-warning btn_buynow w-75 rounded-0">Buy now</button>
+                    <div class="btn_price p-2 bg-secondary text-white w-25 h-100 fw-bold">${product.price}$</div>
                 </div>
                 </div>
             </div>
