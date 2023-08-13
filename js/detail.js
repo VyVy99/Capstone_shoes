@@ -33,8 +33,8 @@ function renderProducts(data) {
     var content = '';
     for (var i = 0; i < data.length; i++) {
         content += `
-        <div class="col-4 mt-5">
-            <div  class="card " style="width: 18rem;">
+        <div class="col-lg-4 col-sm-12 mt-5">
+            <div  class="card " >
              <a class="text-dark " href="./detail.html?productid=${data[i].id}">
                 <img class="img-fluid" src=${data[i].image}  alt=${data[i].name}>
                 <div class="card-body">

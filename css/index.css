@@ -6,8 +6,8 @@ a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1320px;
+#header nav {
+  background-color: #212529 !important;
 }
 
 .nav-right {
@@ -21,7 +21,7 @@ a {
 }
 
 .carousel .carousel-item img {
-  height: 700px;
+  max-height: 700px;
 }
 
 .product_detail_image {
