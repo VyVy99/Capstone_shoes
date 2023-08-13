@@ -20,14 +20,208 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- link css -->
-  <link rel="stylesheet" href="./css/index.css">
+  <!-- register css  -->
+  <link rel="stylesheet" href="./css/register.css">
 </head>
 
 <body>
+  <header>
+    <!-- top -->
+    <nav class="navbar navbar-dark bg-dark ">
+      <div class=" container">
+        <h2 class="text-warning">Cybersoft</h2>
+        <div class=" d-flex nav-right p-2">
+          <button class="btn btn-warning">
 
-   
-   
+            <i class="fa-solid fa-cart-shopping fs-4"></i>
+            (<span id="cart_quality">1</span>)
+          </button>
+          <a href="./register.html" class="btn btn-dark mx-2">Login</a>
+          <a href="./register.html" class="btn btn-dark mx-2">Register</a>
+        </div>
+      </div>
+
+    </nav>
+    <!-- bottom -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Men</a>
+            <a class="nav-link" href="#">Women </a>
+            <a class="nav-link" href="#">Kids </a>
+            <a class="nav-link" href="#">Sports </a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="register">
+    <div class="container">
+      <div class="register_border_radius">
+        <div class="register_content">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="register_form">
+                <h2 class="form_title">Sign up</h2>
+    
+                <form class="sign_up_form" id="signUpForm" onsubmit="dangKy()">
+                  <div class="form_item">
+                    <label for="name" id="lbName">
+                      <i class="fa-solid fa-user"></i>
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                  </div>
+                  <span id="tbName" class="spThongBao"></span>
+
+                  <div class="form_item">
+                    <label for="email" id="lbEmail">
+                      <i class="fa-solid fa-envelope"></i>
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                  </div>
+                  <span id="tbEmail" class="spThongBao"></span>
+      
+                  <div class="form_item">
+                    <label for="password" id="lbPassword">
+                      <i class="fa-solid fa-lock"></i>
+                    </label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                  </div>
+                  <span id="tbPassword" class="spThongBao"></span>
+      
+                  <div class="form_item">
+                    <label for="re_password" id="lbRePassword">
+                      <i class="fa-solid fa-lock"></i>
+                    </label>
+                    <input type="password" name="re_password" id="re_password" placeholder="Repeat Your Password">
+                  </div>
+                  <span id="tbRePassword" class="spThongBao"></span>
+      
+                  <div class="form_item">
+                    <label for="gender" id="lbGender">
+                      <i class="fa-solid fa-venus-mars"></i>
+                    </label>
+                    <select id="gender" name="gender">
+                      <option value="">Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <span id="tbGender" class="spThongBao"></span>
+      
+                  <div class="form_item">
+                    <label for="phone" id="lbPhone">
+                      <i class="fa-solid fa-phone"></i>
+                    </label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                  </div>
+                  <span id="tbPhone" class="spThongBao"></span>
+
+                  <div class="register_button">
+                    <button type="submit" class="btn_sign_up btn btn-primary" id="btnSignUp">Register</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <div class="register_img">
+                <figure>
+                  <img src="./img/undraw_Shopping_Bags_6r4m.png" alt="register img" class="img-fluid">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class=" mt-5" style="background-color: #ffede7;">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">shopping online</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">frequently asked questions</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">delivery</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">pricing</a>
+            </li>
+            <li>
+              <a href="#!" style="color: #4f4f4f;">where we deliver?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">git cards</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">frequently asked questions</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">delivery and payment</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">activate the card</a>
+            </li>
+            <li>
+              <a href="#!" style="color: #4f4f4f;">rules</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">company</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">buy a gift card</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">history</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">return</a>
+            </li>
+            <li>
+              <a href="#!" style="color: #4f4f4f;">contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">diamond club</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">registration</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">application</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">about program</a>
+            </li>
+            <li>
+              <a href="#!" style="color: #4f4f4f;">rules</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+  </footer> 
 
 
 
@@ -35,6 +229,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
   <!-- link axios -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
     integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
@@ -43,9 +240,10 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+    <script src="./model/account.js"></script>
+    <script src="./validation/validation.js"></script>
+    <script src="./js/register.js"></script>
+
 </body>
 
 </html>
