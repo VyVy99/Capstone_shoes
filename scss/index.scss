@@ -6,9 +6,12 @@ a{
 }
 $color-white-F6: #F6F6F6;
 $color-black-F0: #000000;
-.container{
-    max-width: 1320px;
+#header {
+    nav{
+    background-color: #212529 !important;
+    }
 }
+
 //font chu:
 $fs-nav-bright: 16px;
 .nav-right{
@@ -25,7 +28,7 @@ $fs-nav-bright: 16px;
 }
 
 .carousel  .carousel-item img{
-    height: 700px;
+    max-height: 700px;
 }
 .product_detail{
     &_image{
