@@ -26,42 +26,53 @@
 
 <body>
   <header>
-    <!-- top -->
-    <nav class="navbar navbar-dark bg-dark ">
-      <div class=" container">
-        <h2 class="text-warning">Cybersoft</h2>
-        <div class=" d-flex nav-right p-2">
-          <button class="btn btn-warning">
-
-            <i class="fa-solid fa-cart-shopping fs-4"></i>
-            (<span id="cart_quality">1</span>)
+    <div class="container">
+      <nav class="navbar navbar-expand-lg px-0 pt-lg-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <i class="fa-brands fa-shopify"></i>
+            CyberShoes
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <a href="./register.html" class="btn btn-dark mx-2">Login</a>
-          <a href="./register.html" class="btn btn-dark mx-2">Register</a>
-        </div>
-      </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Models
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item item_men" href="#">Men</a></li>
+                  <li><a class="dropdown-item item_women" href="#">Women</a></li>
+                  <li><a class="dropdown-item item_kids" href="#">Kids</a></li>
+                  <li><a class="dropdown-item item_sports" href="#">Sports</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
 
-    </nav>
-    <!-- bottom -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Men</a>
-            <a class="nav-link" href="#">Women </a>
-            <a class="nav-link" href="#">Kids </a>
-            <a class="nav-link" href="#">Sports </a>
-
+            <div class="header_button me-lg-3 mt-lg-0">
+              <a href="#" class="btn btn-outline-primary">Register</a>
+            </div>
+          </div>
+          <div class="bag_button">
+            <i class="fa-solid fa-bag-shopping"></i>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <section class="register">
@@ -86,7 +97,7 @@
                     <label for="email" id="lbEmail">
                       <i class="fa-solid fa-envelope"></i>
                     </label>
-                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <input type="text" name="email" id="email" placeholder="Your Email">
                   </div>
                   <span id="tbEmail" class="spThongBao"></span>
       
@@ -122,7 +133,7 @@
                     <label for="phone" id="lbPhone">
                       <i class="fa-solid fa-phone"></i>
                     </label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
                   </div>
                   <span id="tbPhone" class="spThongBao"></span>
 
@@ -146,82 +157,98 @@
     </div>
   </section>
 
-  <footer class=" mt-5" style="background-color: #ffede7;">
+  <footer id="footer" class=" mt-5 "  style="background-color: #f7f9fc;">
     <div class="container p-4">
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">shopping online</h5>
+          <h4 class="mb-4" style="color: #6C63FF;">Shopping Online</h4>
           <ul class="list-unstyled mb-0">
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">frequently asked questions</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">Frequently asked questions</a>
             </li>
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">delivery</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">Delivery</a>
             </li>
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">pricing</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">Pricing</a>
             </li>
             <li>
-              <a href="#!" style="color: #4f4f4f;">where we deliver?</a>
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">Where we deliver?</a>
             </li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">git cards</h5>
+          <h4 class="mb-4" style="color: #6C63FF;">Git Cards</h4>
           <ul class="list-unstyled mb-0">
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">frequently asked questions</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">frequently asked questions</a>
             </li>
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">delivery and payment</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">delivery and payment</a>
             </li>
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">activate the card</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">activate the card</a>
             </li>
             <li>
-              <a href="#!" style="color: #4f4f4f;">rules</a>
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">rules</a>
             </li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">company</h5>
+          <h4 class="mb-4" style="color: #6C63FF;">Company</h4>
           <ul class="list-unstyled mb-0">
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">buy a gift card</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">buy a gift card</a>
             </li>
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">history</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">history</a>
             </li>
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">return</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">return</a>
             </li>
             <li>
-              <a href="#!" style="color: #4f4f4f;">contact</a>
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">contact</a>
             </li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-3" style="letter-spacing: 2px; color: #7f4722;">diamond club</h5>
+          <h4 class="mb-4" style="color: #6C63FF;">Diamond Club</h4>
           <ul class="list-unstyled mb-0">
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">registration</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">registration</a>
             </li>
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">application</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">application</a>
             </li>
-            <li class="mb-1">
-              <a href="#!" style="color: #4f4f4f;">about program</a>
+            <li class="mb-2">
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">about program</a>
             </li>
             <li>
-              <a href="#!" style="color: #4f4f4f;">rules</a>
+              <a href="#!" style="color: #4f4f4f;" class="footer_item">rules</a>
             </li>
           </ul>
         </div>
       </div>
+      <div class="footer_bottom d-flex justify-content-between align-items-center pt-4 mt-5">
+        <div class="footer_info text-lg-start text-center">
+          <p>© 08/2023. <span><a href="https://www.facebook.com/minh.long.39545464/">Trương Minh Trí</a></span> | <span><a href="https://www.facebook.com/dinhhavy2406">Đinh Hạ Vy</a></span></p>
+        </div>
+        <div class="footer_social">
+          <ul>
+            <li><a href="https://www.facebook.com/minh.long.39545464/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.facebook.com/dinhhavy2406"><i class="fa-brands fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  
-    <!-- Copyright -->
-  </footer> 
+  </footer>
+
+  <!-- back to top  -->
+  <a href="#" class="back_to_top cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+  <script src="./js/back-to-top-master/assets/js/util.js"></script>
+  <script src="./js/back-to-top-master/assets/js/main.js"></script>
 
 
 
@@ -241,6 +268,7 @@
     </script>
 
     <script src="./model/account.js"></script>
+    <script src="./util/util.js"></script>
     <script src="./validation/validation.js"></script>
     <script src="./js/register.js"></script>
 
