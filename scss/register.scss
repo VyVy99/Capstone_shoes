@@ -140,10 +140,13 @@ $fs-nav-bright: 16px;
             outline: none;
             transition: $transition-1;
             &:hover {
-                color: $color-1;
+                color: $color-1 !important;
                 background-color: white;
                 border: 1px solid $color-1;
             }
+        }
+        #btnGoHome {
+            display: none;
         }
     }
     .register_img {

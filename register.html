@@ -1,277 +1,433 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- link font chu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700&family=Montserrat&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <!-- link font chu -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700&family=Montserrat&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
-    rel="stylesheet">
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- register css  -->
-  <link rel="stylesheet" href="./css/register.css">
-</head>
+    <!-- toast -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
-<body>
-  <header>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg px-0 pt-lg-0">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <i class="fa-brands fa-shopify"></i>
-            CyberShoes
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-lg-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <!-- <li class="nav-item">
+    <!-- register css  -->
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg px-0 pt-lg-0">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <i class="fa-brands fa-shopify"></i>
+              CyberShoes
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-lg-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <!-- <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Models
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item item_men" href="#">Men</a></li>
+                    <li>
+                      <a class="dropdown-item item_women" href="#">Women</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item item_kids" href="#">Kids</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item item_sports" href="#">Sports</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact</a>
+                </li>
+              </ul>
+
+              <div class="header_button me-lg-3 mt-lg-0">
+                <a href="#" class="btn btn-outline-primary">Register</a>
+              </div>
+            </div>
+            <div class="bag_button">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="register">
+      <div class="container">
+        <div class="register_border_radius">
+          <div class="register_content">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="register_form">
+                  <h2 class="form_title">Sign up</h2>
+
+                  <form
+                    class="sign_up_form"
+                    id="signUpForm"
+                    onsubmit="onRegister()"
+                  >
+                    <div class="form_item">
+                      <label for="name" id="lbName">
+                        <i class="fa-solid fa-user"></i>
+                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Your Name"
+                      />
+                    </div>
+                    <span id="tbName" class="spThongBao"></span>
+
+                    <div class="form_item">
+                      <label for="email" id="lbEmail">
+                        <i class="fa-solid fa-envelope"></i>
+                      </label>
+                      <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        placeholder="Your Email"
+                      />
+                    </div>
+                    <span id="tbEmail" class="spThongBao"></span>
+
+                    <div class="form_item">
+                      <label for="password" id="lbPassword">
+                        <i class="fa-solid fa-lock"></i>
+                      </label>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <span id="tbPassword" class="spThongBao"></span>
+
+                    <div class="form_item">
+                      <label for="re_password" id="lbRePassword">
+                        <i class="fa-solid fa-lock"></i>
+                      </label>
+                      <input
+                        type="password"
+                        name="re_password"
+                        id="re_password"
+                        placeholder="Repeat Your Password"
+                      />
+                    </div>
+                    <span id="tbRePassword" class="spThongBao"></span>
+
+                    <div class="form_item">
+                      <label for="gender" id="lbGender">
+                        <i class="fa-solid fa-venus-mars"></i>
+                      </label>
+                      <select id="gender" name="gender">
+                        <option value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+                    <span id="tbGender" class="spThongBao"></span>
+
+                    <div class="form_item">
+                      <label for="phone" id="lbPhone">
+                        <i class="fa-solid fa-phone"></i>
+                      </label>
+                      <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        placeholder="Your Phone Number"
+                      />
+                    </div>
+                    <span id="tbPhone" class="spThongBao"></span>
+
+                    <div class="register_button">
+                      <button
+                        type="submit"
+                        class="btn_sign_up btn btn-primary"
+                        id="btnSignUp"
+                      >
+                        Register
+                      </button>
+                      <button
+                        type="button"
+                        class="btn_sign_up btn btn-primary"
+                        id="btnGoHome"
+                        onclick="goHomePage()"
+                      >
+                      Go To Home Page
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="register_img">
+                  <figure>
+                    <img
+                      src="./img/undraw_Shopping_Bags_6r4m.png"
+                      alt="register img"
+                      class="img-fluid"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="mt-5" style="background-color: #f7f9fc">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h4 class="mb-4" style="color: #6c63ff">Shopping Online</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >Frequently asked questions</a
+                >
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Models
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item item_men" href="#">Men</a></li>
-                  <li><a class="dropdown-item item_women" href="#">Women</a></li>
-                  <li><a class="dropdown-item item_kids" href="#">Kids</a></li>
-                  <li><a class="dropdown-item item_sports" href="#">Sports</a></li>
-                </ul>
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >Delivery</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">Contact</a>
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >Where we deliver?</a
+                >
               </li>
             </ul>
-
-            <div class="header_button me-lg-3 mt-lg-0">
-              <a href="#" class="btn btn-outline-primary">Register</a>
-            </div>
           </div>
-          <div class="bag_button">
-            <i class="fa-solid fa-bag-shopping"></i>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h4 class="mb-4" style="color: #6c63ff">Git Cards</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >frequently asked questions</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >delivery and payment</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >activate the card</a
+                >
+              </li>
+              <li>
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >rules</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h4 class="mb-4" style="color: #6c63ff">Company</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >buy a gift card</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >history</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >return</a
+                >
+              </li>
+              <li>
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h4 class="mb-4" style="color: #6c63ff">Diamond Club</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >registration</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >application</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >about program</a
+                >
+              </li>
+              <li>
+                <a href="#!" style="color: #4f4f4f" class="footer_item"
+                  >rules</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </div>
-  </header>
-
-  <section class="register">
-    <div class="container">
-      <div class="register_border_radius">
-        <div class="register_content">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="register_form">
-                <h2 class="form_title">Sign up</h2>
-    
-                <form class="sign_up_form" id="signUpForm" onsubmit="dangKy()">
-                  <div class="form_item">
-                    <label for="name" id="lbName">
-                      <i class="fa-solid fa-user"></i>
-                    </label>
-                    <input type="text" name="name" id="name" placeholder="Your Name">
-                  </div>
-                  <span id="tbName" class="spThongBao"></span>
-
-                  <div class="form_item">
-                    <label for="email" id="lbEmail">
-                      <i class="fa-solid fa-envelope"></i>
-                    </label>
-                    <input type="text" name="email" id="email" placeholder="Your Email">
-                  </div>
-                  <span id="tbEmail" class="spThongBao"></span>
-      
-                  <div class="form_item">
-                    <label for="password" id="lbPassword">
-                      <i class="fa-solid fa-lock"></i>
-                    </label>
-                    <input type="password" name="password" id="password" placeholder="Password">
-                  </div>
-                  <span id="tbPassword" class="spThongBao"></span>
-      
-                  <div class="form_item">
-                    <label for="re_password" id="lbRePassword">
-                      <i class="fa-solid fa-lock"></i>
-                    </label>
-                    <input type="password" name="re_password" id="re_password" placeholder="Repeat Your Password">
-                  </div>
-                  <span id="tbRePassword" class="spThongBao"></span>
-      
-                  <div class="form_item">
-                    <label for="gender" id="lbGender">
-                      <i class="fa-solid fa-venus-mars"></i>
-                    </label>
-                    <select id="gender" name="gender">
-                      <option value="">Gender</option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-                    </select>
-                  </div>
-                  <span id="tbGender" class="spThongBao"></span>
-      
-                  <div class="form_item">
-                    <label for="phone" id="lbPhone">
-                      <i class="fa-solid fa-phone"></i>
-                    </label>
-                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
-                  </div>
-                  <span id="tbPhone" class="spThongBao"></span>
-
-                  <div class="register_button">
-                    <button type="submit" class="btn_sign_up btn btn-primary" id="btnSignUp">Register</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-              <div class="register_img">
-                <figure>
-                  <img src="./img/undraw_Shopping_Bags_6r4m.png" alt="register img" class="img-fluid">
-                </figure>
-              </div>
-            </div>
+        <div
+          class="footer_bottom d-flex justify-content-between align-items-center pt-4 mt-5"
+        >
+          <div class="footer_info text-lg-start text-center">
+            <p>
+              © 08/2023.
+              <span
+                ><a href="https://www.facebook.com/minh.long.39545464/"
+                  >Trương Minh Trí</a
+                ></span
+              >
+              |
+              <span
+                ><a href="https://www.facebook.com/dinhhavy2406"
+                  >Đinh Hạ Vy</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="footer_social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/minh.long.39545464/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/dinhhavy2406"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <footer id="footer" class=" mt-5 "  style="background-color: #f7f9fc;">
-    <div class="container p-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h4 class="mb-4" style="color: #6C63FF;">Shopping Online</h4>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">Frequently asked questions</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">Delivery</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">Pricing</a>
-            </li>
-            <li>
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">Where we deliver?</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h4 class="mb-4" style="color: #6C63FF;">Git Cards</h4>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">frequently asked questions</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">delivery and payment</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">activate the card</a>
-            </li>
-            <li>
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">rules</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h4 class="mb-4" style="color: #6C63FF;">Company</h4>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">buy a gift card</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">history</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">return</a>
-            </li>
-            <li>
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h4 class="mb-4" style="color: #6C63FF;">Diamond Club</h4>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">registration</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">application</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">about program</a>
-            </li>
-            <li>
-              <a href="#!" style="color: #4f4f4f;" class="footer_item">rules</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer_bottom d-flex justify-content-between align-items-center pt-4 mt-5">
-        <div class="footer_info text-lg-start text-center">
-          <p>© 08/2023. <span><a href="https://www.facebook.com/minh.long.39545464/">Trương Minh Trí</a></span> | <span><a href="https://www.facebook.com/dinhhavy2406">Đinh Hạ Vy</a></span></p>
-        </div>
-        <div class="footer_social">
-          <ul>
-            <li><a href="https://www.facebook.com/minh.long.39545464/"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="https://www.facebook.com/dinhhavy2406"><i class="fa-brands fa-facebook-f"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <!-- back to top  -->
+    <a
+      href="#"
+      class="back_to_top cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <script src="./js/back-to-top-master/assets/js/util.js"></script>
+    <script src="./js/back-to-top-master/assets/js/main.js"></script>
 
-  <!-- back to top  -->
-  <a href="#" class="back_to_top cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out">
-    <i class="fa-solid fa-angle-up"></i>
-  </a>
-  <script src="./js/back-to-top-master/assets/js/util.js"></script>
-  <script src="./js/back-to-top-master/assets/js/main.js"></script>
-
-
-
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-  <!-- link axios -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
-    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./model/account.js"></script>
     <script src="./util/util.js"></script>
     <script src="./validation/validation.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="./js/register.js"></script>
-
-</body>
-
+  </body>
 </html>
