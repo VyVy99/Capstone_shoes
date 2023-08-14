@@ -125,9 +125,12 @@ a {
   transition: all 0.5s;
 }
 .register .register_button .btn_sign_up:hover {
-  color: #6C63FF;
+  color: #6C63FF !important;
   background-color: white;
   border: 1px solid #6C63FF;
+}
+.register .register_button #btnGoHome {
+  display: none;
 }
 .register .register_img {
   padding: 0 35px;
