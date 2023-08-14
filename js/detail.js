@@ -34,7 +34,7 @@ function renderProducts(data) {
     for (var i = 0; i < data.length; i++) {
         content += `
         <div class="col-lg-4 col-sm-12 mt-5">
-            <div  class="card " >
+            <div  class="card product_item" >
              <a class="text-dark " href="./detail.html?productid=${data[i].id}">
                 <img class="img-fluid" src=${data[i].image}  alt=${data[i].name}>
                 <div class="card-body">
@@ -45,8 +45,8 @@ function renderProducts(data) {
                             </a>
                 <div class="card-footer">
                 <div class="d-flex">
-                    <button class="btn btn-warning w-75 rounded-0">Buy now</button>
-                    <div class=" p-2 bg-secondary text-white w-25 h-100 fw-bold">${data[i].price}$</div>
+                    <button class="btn btn-warning btn_buynow w-75 rounded-0">Buy now</button>
+                    <div class="btn_price p-2 bg-secondary text-white w-25 h-100 fw-bold">${data[i].price}$</div>
                 </div>
                 </div>
             </div>
@@ -54,20 +54,32 @@ function renderProducts(data) {
     `
     }
 
-    document.getElementById("showProduct").innerHTML = content
-
+    document.getElementById("showProduct").innerHTML = content;
 }
+
 function renderProduct(data) {
     
-    const  product = new Product(data)
-    if(product){
-        document.getElementById(mapIDDetail.product_image).src = product.image
-        document.getElementById(mapIDDetail.product_name).innerHTML = product.name
-        document.getElementById(mapIDDetail.product_deps).innerHTML = product.description
-        document.getElementById(mapIDDetail.product_size).innerHTML = product.size
-        document.getElementById(mapIDDetail.product_price).innerHTML = product.price
+    const product = new Product(data);
+    const productSize = product.size;
+    let renderSize = () => {
+        let content = '';
+        for (i = 0; i < productSize.length; i++) {
+            content += `
+                <button type="button" class="mx-1 btn btn-info">${productSize[i]}</button>
+            `;
+        }
+        return content;
+    };
 
-        renderProducts(product.relatedProducts)
+    if(product){
+        document.getElementById(mapIDDetail.product_image).src = product.image;
+        document.getElementById(mapIDDetail.product_name).innerHTML = product.name;
+        document.getElementById(mapIDDetail.product_deps).innerHTML = product.description;
+        document.getElementById(mapIDDetail.product_size).innerHTML = renderSize();
+        document.getElementById(mapIDDetail.product_price).innerHTML = product.price;
+
+        renderProducts(product.relatedProducts);
+        console.log(product.size);
     }
 }
 
